@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width:device-width,initial-scale=1.0"
+    <title>Freecodecamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css"> 
+    </head>
+<body>
+  <main>
+    <h1 id="title">Freecodecamp Survey Form</h1>
+    <p id="description"class="est">Thanks for your opinion</p>
+    <fieldset class="inform">
+    <form id="survey-form">
+      <label for="name" id="name-label">Name:<input id="name"placeholder="Enter your name" type="text" required></label>
+      <label for="email" id="email-label">Email:<input id="email"placeholder="Enter your email" type="email" required></label>
+      <label for="number" id="number-label">Age(optional):<input id="number"placeholder="Enter your age" type="number"min="13"max="120" required></label>
+      <label for="dropdown">Which option describes your current role? <select id="dropdown" name="dropdown">
+        <option value="">Select your current role</option>
+        <option value="1">Student</option>
+        <option value="2">Full time job</option>
+        <option value="3">Full time learner</option>
+        <option value="4">Prefer not to say</option>
+        <option value="5">Other</option>
+        </select> </label>
+      <label>Would you recommend freecode camp to your friend?</label><label><input class="margin"name="opinion"  type="radio"value="1" > Definetly</label>
+      <label><input class="margin"name="opinion" value="maybe"type="radio" >Maybe</label>
+      <label for="nots"><input class="margin"name="opinion" id="nots" value="nots"type="radio">Not sure</label>
+      <label for="favourite">What is your favorite feature in freecodecamp?</label><label><select id="favourite" name="favourite">
+        <option value="">Select an option</option>
+        <option value="1">Challenges</option>
+        <option value="2">Project</option>
+        <option value="3">Community</option>
+        <option value="4">Option</option>
+        </select></label>
+        <label for="front">What would you like to see improved? (Check all that apply)</label><label><input class="margin"id="front" value="front"type="checkbox">Front-end projects</label>
+       <label for="back"><input class="margin"id="back"value="back" type="checkbox">Back-end projects</label>
+        <label for="datav"><input class="margin"type="checkbox"id="datav" value="datav">Data Visualization</label>
+         <label for="chal"><input class="margin" id="chal"value="chal" type="checkbox">Challenges</label>
+          <label for="opens"><input class="margin"id="opens"value="opens" type="checkbox">Open source community</label>
+          <label for="glitter"><input class="margin"type="checkbox" id="glitter" value="glitter">Gitter help rooms</label>
+          <label for="vid"><input class="margin"type="checkbox" value="vid" id="vid">Videos</label>
+          <label for="city"><input class="margin"type="checkbox"value="city"id="city" >City meetups</label>
+          <label for="wi"><input class="margin"id="wi"value="wi" type="checkbox">Wiki</label>
+          <label for="foru"><input class="margin"type="checkbox" id="foru"value="foru" >Forum</label>
+          <label for="addon"><input class="margin"id="addon"value="addon" type="checkbox">Additional courses</label>
+          <label for="comments">Any comments or suggestions?<textarea id="comments"name="comments" placeholder="Any comments here..."></textarea></label> 
+        <button id="submit" type="submit">submit</button>
+        </fieldset>
+    </form>  
+  </main>
+</body>
+</html>
